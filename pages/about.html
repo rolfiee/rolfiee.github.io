@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Rolfie's site" />
+    <meta name="keywords" content="html5,css,Playstation" />
+    <link rel="shortcut icon" type="image/gif" href="assets/images/favicon.gif">
+
+    <link rel="manifest" href="./meta/site.webmanifest">
+    <link rel="mask-icon" href="./meta/safari-pinned-tab.svg" color="#E03C34">
+    <meta name="msapplication-TileColor" content="#E03C34">
+    <meta name="theme-color" content="#E03C34">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rolfie" />
+    <meta property="og:url" content="https://rolfiee.github.io/" />
+    <meta property="og:description" content="Rolfie's site" />
+    <meta property="og:image" type="image/gif" content="assets/images/favicon.gif" />
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <style>
+      .play {
+        font-family:"Play";
+      }
+      .logo {
+        margin: 0 2rem 0 2rem;
+        height: 50px;
+      }
+      .source-code {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      @media only screen and (max-width: 768px) {
+        .play > .logo {
+          height: 50px;
+          margin-bottom: 40px;
+        }
+        .play {
+          margin-left: 1rem;
+        }
+        .container {
+          width: 90%;
+        }
+        .buttons {
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+        }
+        .containers {
+          width: calc(100% - .5em);
+        }
+        .title {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          box-sizing: border-box;
+          width: 260px;
+          height: 24px;
+          font-size: 50px;
+          line-height: 0px;
+        }
+        .progress:not(:first-child) {
+          margin-top: 35px;
+        }
+        .progress:first-child {
+          margin-top: 10px;
+        }
+        .controller-buttons {
+          margin: 1rem;
+          display: flex;
+          align-items: center;
+          flex-flow: row wrap;
+        }
+        .progress > .subtitle {
+          position: absolute;
+          top: .44em;
+          left: 20%;
+          display: block;
+        }
+        h1 {
+          font-size: 1.7em;
+        }
+        .footer {
+          text-align: center;
+        }
+        .logo {
+          margin-top: .5em;
+        }
+        .fork-me {
+          top: .5em;
+        }
+        .input {
+          width: 90%;
+        }
+      }
+      @media only screen and (min-width: 769px) {
+        .progress > .subtitle {
+          position: absolute;
+          top: .44em;
+          left: 15%;
+          display: block;
+        }
+        .controller-buttons {
+          margin: 1rem;
+          display: flex;
+          align-items: center;
+          flex-flow: row wrap;
+        }
+      }
+      @media only screen and (min-width: 320px)  and (max-width: 321px) {
+        body {
+          width: calc(100% + .5em)
+        }
+        h1 {
+          font-size: 1.7em;
+        }
+      }
+    </style>
+
+    <title>About // Rolfie's site</title>
+  </head>
+
+  <body>
+    <header style="position: relative;">
+      <div style="display:flex;align-items:center;flex-flow:row wrap;">
+        <img class="logo" src="../assets/images/949643542828040212.gif"></img>
+        <h1 class="play">Rolfie</h1>
+      </div>
+      <p><div class="rainbow-text" style="text-align: center;">
+        <span class="block-line"><span><span style="color:#ff0000;">L</span><span style="color:#ff2b00;">e</span><span style="color:#ff5100;">t</span><span style="color:#ff7700;">'</span><span style="color:#ff9d00;">s&nbsp;</span></span><span><span style="color:#ffc800;">s</span><span style="color:#ffee00;">e</span><span style="color:#eaff00;">e&nbsp;</span></span><span><span style="color:#c3ff00;">h</span><span style="color:#99ff00;">o</span><span style="color:#73ff00;">w&nbsp;</span></span><span><span style="color:#4cff00;">f</span><span style="color:#26ff00;">a</span><span style="color:#00ff00;">s</span><span style="color:#00ff2b;">t&nbsp;</span></span><span style="color:#00ff51;">I&nbsp;</span><span><span style="color:#00ff77;">s</span><span style="color:#00ff9d;">t</span><span style="color:#00ffc8;">o</span><span style="color:#00ffee;">p&nbsp;</span></span><span><span style="color:#00eaff;">t</span><span style="color:#00c3ff;">a</span><span style="color:#0099ff;">l</span><span style="color:#0073ff;">k</span><span style="color:#004cff;">i</span><span style="color:#0026ff;">n</span><span style="color:#0000ff;">g&nbsp;</span></span><span><span style="color:#2a00ff;">a</span><span style="color:#5100ff;">b</span><span style="color:#7700ff;">o</span><span style="color:#9d00ff;">u</span><span style="color:#c800ff;">t&nbsp;</span></span><span><span style="color:#ee00ff;">m</span><span style="color:#ff00ea;">y</span><span style="color:#ff00c3;">s</span><span style="color:#ff0099;">e</span><span style="color:#ff0073;">l</span><span style="color:#ff004c;">f</span><span style="color:#ff0026;">!</span></span></span>
+    </div></p>
+      <p class="source-code"><a href="https://github.com/rolfiee/rolfiee.github.io">Source code</a></p>
+    </header>
+<!--This is where it starts to get pretty crazy, you could say-->
+    <section class="container with-title">
+      <h2 class="title">Navigation</h2>
+      <div style="margin: 1rem;" class="buttons">
+        <!--<button type="button" style="margin-bottom: .4em" class="btn">Normal</button>-->
+        <a href="../index.html">
+          <button type="button" style="margin-bottom: .4em" class="btn primary">Home</button>
+        </a>
+        <a href="about.html">
+          <button type="button" style="margin-bottom: .4em" class="btn primary">About</button>
+        </a>
+        <a href="contact.html">
+            <button type="button" style="margin-bottom: .4em" class="btn primary">Contact</button>
+          </a>
+        <!--<button type="button" style="margin-bottom: .4em" class="btn success">Success</button>-->
+        <!--<button type="button" style="margin-bottom: .4em" class="btn warning">Warning</button>-->
+        <!--<button type="button" class="btn error">Error</button>-->
+          <!--<button type="button" class="btn" disabled>Disabled</button>-->
+      </div>
+    </section>
+
+    <section class="container">
+        <h2 class="title">About Me</h2>
+        <div class="containers">
+            <p>Hei! I'm Rolfie, but in some places you might know me by my real name. I'm just a girl interested in bass guitar, programming, in particular NDS homebrew, and OS internals. <br>
+            Other than English, I can speak Norwegian and I know quite a bit of Russian, I live in Norway but some of my family can speak Russian so I learned the basics that way, alongside studying a bit myself.<br><br>
+            That's all from me though, I don't like talking about myself very much so you'll just have to guess the rest :p</p>
+        </div>
+      </section>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Rolfie's site" />
+    <meta name="keywords" content="html5,css,Playstation" />
+    <link rel="shortcut icon" type="image/gif" href="assets/images/favicon.gif">
+
+    <link rel="manifest" href="./meta/site.webmanifest">
+    <link rel="mask-icon" href="./meta/safari-pinned-tab.svg" color="#E03C34">
+    <meta name="msapplication-TileColor" content="#E03C34">
+    <meta name="theme-color" content="#E03C34">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rolfie" />
+    <meta property="og:url" content="https://rolfiee.github.io/" />
+    <meta property="og:description" content="Rolfie's site" />
+    <meta property="og:image" type="image/gif" content="assets/images/favicon.gif" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style>
+      .play {
+        font-family:"Play";
+      }
+      .logo {
+        margin: 0 2rem 0 2rem;
+        height: 50px;
+      }
+      .source-code {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      @media only screen and (max-width: 768px) {
+        .play > .logo {
+          height: 50px;
+          margin-bottom: 40px;
+        }
+        .play {
+          margin-left: 1rem;
+        }
+        .container {
+          width: 90%;
+        }
+        .buttons {
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+        }
+        .containers {
+          width: calc(100% - .5em);
+        }
+        .title {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          box-sizing: border-box;
+          width: 260px;
+          height: 24px;
+          font-size: 50px;
+          line-height: 0px;
+        }
+        .progress:not(:first-child) {
+          margin-top: 35px;
+        }
+        .progress:first-child {
+          margin-top: 10px;
+        }
+        .controller-buttons {
+          margin: 1rem;
+          display: flex;
+          align-items: center;
+          flex-flow: row wrap;
+        }
+        .progress > .subtitle {
+          position: absolute;
+          top: .44em;
+          left: 20%;
+          display: block;
+        }
+        h1 {
+          font-size: 1.7em;
+        }
+        .footer {
+          text-align: center;
+        }
+        .logo {
+          margin-top: .5em;
+        }
+        .fork-me {
+          top: .5em;
+        }
+        .input {
+          width: 90%;
+        }
+      }
+      @media only screen and (min-width: 769px) {
+        .progress > .subtitle {
+          position: absolute;
+          top: .44em;
+          left: 15%;
+          display: block;
+        }
+        .controller-buttons {
+          margin: 1rem;
+          display: flex;
+          align-items: center;
+          flex-flow: row wrap;
+        }
+      }
+      @media only screen and (min-width: 320px)  and (max-width: 321px) {
+        body {
+          width: calc(100% + .5em)
+        }
+        h1 {
+          font-size: 1.7em;
+        }
+      }
+    </style>
+
+    <title>Home // Rolfie's site</title>
+  </head>
+
+  <body>
+    <header style="position: relative;">
+      <div style="display:flex;align-items:center;flex-flow:row wrap;">
+        <img class="logo" src="assets/images/949643542828040212.gif"></img>
+        <h1 class="play">Rolfie</h1>
+      </div>
+      <p><span style="color:#ff0000;">W</span><span style="color:#ffdd00;">e</span><span style="color:#48ff00;">l</span><span style="color:#00ff95;">c</span><span style="color:#0091ff;">o</span><span style="color:#4d00ff;">m</span><span style="color:#ff00d9;">e</span></span></span>! I'm Rolfie, and I don't know what to put here </p>
+      <p class="source-code"><a href="https://github.com/rolfiee/rolfiee.github.io">Source code</a></p>
+    
+      <!--<marquee behavior="scroll" direction="left"><div class="rainbow-text" style="text-align: center;">
+        <span class="block-line"><span style="color:#ff0000;">I&nbsp;</span><span><span style="color:#ff2600;">c</span><span style="color:#ff4800;">a</span><span style="color:#ff6e00;">n</span><span style="color:#ff9100;">'</span><span style="color:#ffb300;">t&nbsp;</span></span><span><span style="color:#ffd900;">b</span><span style="color:#fffb00;">e</span><span style="color:#e1ff00;">l</span><span style="color:#bbff00;">i</span><span style="color:#99ff00;">e</span><span style="color:#73ff00;">v</span><span style="color:#51ff00;">e&nbsp;</span></span><span><span style="color:#2fff00;">t</span><span style="color:#08ff00;">h</span><span style="color:#00ff19;">e</span><span style="color:#00ff3c;">y</span><span style="color:#00ff62;">'</span><span style="color:#00ff84;">r</span><span style="color:#00ffaa;">e&nbsp;</span></span><span><span style="color:#00ffcc;">l</span><span style="color:#00ffee;">e</span><span style="color:#00eaff;">t</span><span style="color:#00c8ff;">t</span><span style="color:#00a6ff;">i</span><span style="color:#007fff;">n</span><span style="color:#005eff;">g&nbsp;</span></span><span><span style="color:#0037ff;">u</span><span style="color:#0015ff;">s&nbsp;</span></span><span><span style="color:#0d00ff;">S</span><span style="color:#3300ff;">C</span><span style="color:#5500ff;">R</span><span style="color:#7700ff;">O</span><span style="color:#9d00ff;">L</span><span style="color:#bf00ff;">L&nbsp;</span></span><span><span style="color:#e500ff;">t</span><span style="color:#ff00f6;">h</span><span style="color:#ff00d4;">e&nbsp;</span></span><span><span style="color:#ff00ae;">t</span><span style="color:#ff008c;">e</span><span style="color:#ff006a;">x</span><span style="color:#ff0044;">t</span><span style="color:#ff0022;">!</span></span></span>
+      </div></marquee>-->
+    
+    </header>
+<!--This is where it starts to get pretty crazy, you could say-->
+    <section class="container with-title">
+      <h2 class="title">Navigation</h2>
+      <div style="margin: 1rem;" class="buttons">
+        <!--<button type="button" style="margin-bottom: .4em" class="btn">Normal</button>-->
+        <a href="index.html">
+          <button type="button" style="margin-bottom: .4em" class="btn primary">Home</button>
+        </a>
+        <a href="pages/about.html">
+          <button type="button" style="margin-bottom: .4em" class="btn primary">About</button>
+        </a>
+        <a href="pages/contact.html">
+          <button type="button" style="margin-bottom: .4em" class="btn primary">Contact</button>
+        </a>
+        <!--<button type="button" style="margin-bottom: .4em" class="btn success">Success</button>-->
+        <!--<button type="button" style="margin-bottom: .4em" class="btn warning">Warning</button>-->
+        <!--<button type="button" class="btn error">Error</button>-->
+          <!--<button type="button" class="btn" disabled>Disabled</button>-->
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="title">News</h2>
+      <div class="containers">
+        <!--<div class="container">
+          <label class="title">Default</label>
+          <p>Something to put here for later!</p>
+        </div>-->
+        <div class="container dark">
+          <label class="title">Oct. 08, 22</label>
+          <p>Hello world! This is the first news 'article' here, there might be lots or none at all in the future.. Who knows, lol <br>
+            But that's about it, please don't mind the messy code as I just wanted to implement some ideas I had on this site. <br> 
+            Keep in mind, some of what you see here might not even be it's final form :p
+          </p>
+        </div>
+        <!--<div class="container light">
+          <label class="title">light</label>
+          <p>One, two, three, four, one, two, three, four..</p>-->
+        </div>
+      </div>
+    </section>
+
+    <!--<section class="container">
+      <h2 class="title">Progress bars</h2>
+      <div style="margin: 1rem;" class="progresses">
+        <div class="progress">
+          <div class="bar" style="width: 80%"></div>
+          <div class="subtitle">Default</div>
+        </div>
+        <div class="progress primary">
+          <div class="bar" style="width: 100%"></div>
+          <div class="subtitle">primary</div>
+        </div>
+        <div class="progress success">
+          <div class="bar" style="width: 40%"></div>
+          <div class="subtitle">success</div>
+        </div>
+        <div class="progress warning">
+          <div class="bar" style="width: 60%"></div>
+          <div class="subtitle">warning</div>
+        </div>
+        <div class="progress error">
+          <div class="bar" style="width: 20%"></div>
+          <div class="subtitle">error</div>
+        </div>
+        <div class="progress indeterminate">
+          <div class="bar"></div>
+          <div class="subtitle">indeterminate</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="title">Radios</h2>
+      <div style="margin: 1rem;margin-top: 0;" class="radio">
+        <label>
+          <input type="radio" name="test" value="small" checked>
+          <span class="option">Yes
+            <span class="click"></span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="test" value="big">
+          <span class="option">No
+            <span class="click"></span>
+          </span>
+        </label>
+      </div>
+    </section>
+
+    <section class="form container">
+      <h2 class="title">Forms</h2>
+      <div class="field">
+        <label>Default</label>
+        <input type="text" class="input">
+      </div>
+      <div class="field is-inline">
+        <label>With placeholder</label>
+        <input type="text" class="input" placeholder="Jill Valentine">
+      </div>
+      <div class="field">
+        <label>Disabled</label>
+        <input type="text" class="input" placeholder="Disabled" disabled>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="title">Icons</h2>
+      <section class="container" style="max-width:100%">
+        <h3 class="title">Dance Dance Revolution</h3>
+        <div style="margin: 1rem;">
+          <i class="icon ddr1"></i>
+          <i class="icon ddr2"></i>
+          <i class="icon ddr3"></i>
+        </div>
+        <h3 class="title">Controller Buttons</h3>
+        <div class="controller-buttons">
+          <div style="margin-right:.1em">
+            <i class="icon square clickable"></i>
+          </div>
+          <div style="margin-right:.1em;">
+            <i class="icon triangle clickable"></i>
+          </div>
+          <div style="margin-right:.1em;">
+            <i class="icon circle clickable"></i>
+          </div>
+          <div style="margin-right:.4em;">
+            <i class="icon x clickable"></i>
+          </div>
+          <div style="margin-right:.1em">
+            <i class="icon arrow-left"></i>
+          </div>
+          <div style="margin-right:.2em">
+            <i class="icon arrow-right"></i>
+          </div>
+          <div style="margin-right:.1em;margin-left:.1em">
+            <i class="icon arrow-down"></i>
+          </div>
+          <div style="margin-right:.4em">
+            <i class="icon arrow-up"></i>
+          </div>
+          <div style="margin-right:.4em">
+            <i class="icon start start-label"></i>
+          </div>
+          <div style="margin-right:.4em">
+            <i class="icon select select-label"></i>
+          </div>
+          <div style="margin-right:.1em">
+            <i class="icon l1"></i>
+          </div>
+          <div style="margin-right:.4em">
+            <i class="icon r1"></i>
+          </div>
+          <div style="margin-right:.1em">
+            <i class="icon l2"></i>
+          </div>
+          <div style="margin-right:.4em">
+            <i class="icon r2"></i>
+          </div>
+          <div style="margin-right:.1em">
+            <i class="icon l3"></i>
+          </div>
+          <div style="margin-right:.4em">
+            <i class="icon r3"></i>
+          </div>
+          <div style="margin-right:.1em">
+            <i class="icon psone"></i>
+          </div>
+        </div>
+      </section>
+    </section>-->
+
+
+    <footer class="footer">
+      <p>
+        Made by <a href="https://github.com/rolfiee">Rolfie</a> <br>
+        Special thanks to <a href="pages/specialthanks.html">someone</a>!
+      </p>
+    </footer>
+  </body>
+</html>
